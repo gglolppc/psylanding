@@ -10,11 +10,11 @@ from app.api.routes.auth import router as auth_router
 from app.web.routes.pages import router as pages_router
 from app.web.routes.admin import router as admin_pages_router
 from app.web.routes.admin_auth import router as admin_login
-
+from uvicorn.middleware.proxy_headers import ProxyHeadersMiddleware
 
 app = FastAPI(title="Psychologist Site")
 
-
+app.add_middleware(ProxyHeadersMiddleware, trusted_hosts="*")
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
