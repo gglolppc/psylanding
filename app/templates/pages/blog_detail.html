@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="bg-[#F6F6F6] py-10 sm:py-14 lg:py-16">
+    <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <a href="/blog"
+           class="inline-flex items-center rounded-full border border-[#023246]/10 bg-white px-4 py-2 text-sm font-medium text-[#023246] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-[#287094]/30 hover:text-[#287094]">
+            ← Назад в блог
+        </a>
+
+        <article class="mt-6 overflow-hidden rounded-[2rem] border border-[#023246]/8 bg-white shadow-[0_20px_60px_rgba(2,50,70,0.08)]">
+            {% if post.cover_img %}
+                <div class="aspect-[16/9] w-full overflow-hidden bg-[#D4D4CE]">
+                    <img
+                        src="{{ post.cover_img }}"
+                        alt="{{ post.title }}"
+                        class="h-full w-full object-cover"
+                    >
+                </div>
+            {% endif %}
+
+            <div class="px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
+                <div class="mb-4">
+                    <span class="rounded-full bg-[#287094]/10 px-3 py-1 text-xs font-medium text-[#287094]">
+                        Психологический блог
+                    </span>
+                </div>
+
+                <h1 class="text-3xl font-semibold leading-tight tracking-tight text-[#023246] sm:text-4xl lg:text-5xl">
+                    {{ post.title }}
+                </h1>
+
+                <div class="mt-8 h-px w-full bg-[#023246]/8"></div>
+
+                <div class="prose prose-lg mt-8 max-w-none
+                            prose-headings:text-[#023246]
+                            prose-p:text-[#023246]/80
+                            prose-p:leading-8
+                            prose-a:text-[#287094]
+                            prose-a:no-underline hover:prose-a:underline
+                            prose-strong:text-[#023246]
+                            prose-li:text-[#023246]/80
+                            prose-blockquote:border-l-[#287094]
+                            prose-blockquote:text-[#023246]/70
+                            prose-img:rounded-[1.5rem]">
+                    {{ post.content | safe }}
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+{% endblock %}

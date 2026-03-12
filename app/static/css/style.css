@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1f1f1f;
+    background: #fafafa;
+}
+
+.container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+.site-header,
+.site-footer {
+    background: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.site-header .container,
+.site-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a,
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hero {
+    padding: 80px 0;
+    background: #f1f5f9;
+}
+
+.section {
+    padding: 64px 0;
+}
+
+.cards,
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card,
+.post-card {
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.post-card img,
+.post-cover {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.booking-form {
+    display: grid;
+    gap: 14px;
+    max-width: 640px;
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #dcdcdc;
+    font: inherit;
+}
+
+.booking-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.btn,
+.booking-form button {
+    background: #111827;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.success-message {
+    margin-bottom: 16px;
+    padding: 14px 16px;
+    background: #dcfce7;
+    border-radius: 12px;
+}
+
+@media (max-width: 900px) {
+    .cards,
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .site-header .container {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

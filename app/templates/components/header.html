@@ -1,0 +1,74 @@
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<header x-data="{ open: false }" class="sticky top-0 z-50 border-b border-[#023246]/6 bg-[#F6F6F6]/85 backdrop-blur-xl">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <a href="/" class="text-lg font-semibold tracking-tight text-[#023246]">
+            <img src="{{ url_for('static', path='img/logo.png') }}" alt="Логотип" class="h-10 w-auto">
+        </a>
+
+        <nav class="hidden items-center gap-8 md:flex">
+            <a href="/#about" class="text-sm text-[#023246]/75 transition hover:text-[#287094]">О специалисте</a>
+            <a href="/#formats" class="text-sm text-[#023246]/75 transition hover:text-[#287094]">Формат работы</a>
+            <a href="/#certificates" class="text-sm text-[#023246]/75 transition hover:text-[#287094]">Сертификаты</a>
+            <a href="/blog" class="text-sm text-[#023246]/75 transition hover:text-[#287094]">Блог</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+            <a href="/#booking" class="hidden sm:inline-flex items-center justify-center rounded-full bg-[#023246] px-5 py-2.5 text-sm font-medium text-white transition-all hover:bg-[#03405a]">
+                Записаться
+            </a>
+
+            <button @click="open = true" class="p-2 md:hidden text-[#023246]" aria-label="Открыть меню">
+                <svg class="h-7 w-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <template x-teleport="body">
+        <div x-show="open" class="relative z-[100]" role="dialog" aria-modal="true">
+            <div x-show="open"
+                 x-transition:enter="transition-opacity ease-linear duration-300"
+                 x-transition:enter-start="opacity-0"
+                 x-transition:enter-end="opacity-100"
+                 x-transition:leave="transition-opacity ease-linear duration-300"
+                 x-transition:leave-start="opacity-100"
+                 x-transition:leave-end="opacity-0"
+                 @click="open = false"
+                 class="fixed inset-0 bg-[#023246]/40 backdrop-blur-sm"></div>
+
+            <div x-show="open"
+                 x-transition:enter="transition ease-in-out duration-300 transform"
+                 x-transition:enter-start="-translate-x-full"
+                 x-transition:enter-end="translate-x-0"
+                 x-transition:leave="transition ease-in-out duration-300 transform"
+                 x-transition:leave-start="translate-x-0"
+                 x-transition:leave-end="-translate-x-full"
+                 class="fixed inset-y-0 left-0 flex w-full max-w-[280px] flex-col bg-[#F6F6F6] shadow-2xl">
+
+                <div class="flex items-center justify-between px-6 py-5 border-b border-[#023246]/5">
+                    <span class="font-bold text-[#023246]">Меню</span>
+                    <button @click="open = false" class="text-[#023246]">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <nav class="flex flex-col gap-1 p-4">
+                    <a href="/#about" @click="open = false" class="rounded-lg px-4 py-3 text-base font-medium text-[#023246] hover:bg-[#023246]/5 transition">О специалисте</a>
+                    <a href="/#formats" @click="open = false" class="rounded-lg px-4 py-3 text-base font-medium text-[#023246] hover:bg-[#023246]/5 transition">Формат работы</a>
+                    <a href="/#certificates" @click="open = false" class="rounded-lg px-4 py-3 text-base font-medium text-[#023246] hover:bg-[#023246]/5 transition">Сертификаты</a>
+                    <a href="/blog" @click="open = false" class="rounded-lg px-4 py-3 text-base font-medium text-[#023246] hover:bg-[#023246]/5 transition">Блог</a>
+                </nav>
+
+                <div class="mt-auto p-4 border-t border-[#023246]/5">
+                    <a href="/#booking" @click="open = false" class="flex w-full items-center justify-center rounded-xl bg-[#023246] py-4 text-sm font-semibold text-white shadow-lg active:scale-95 transition">
+                        Записаться на прием
+                    </a>
+                </div>
+            </div>
+        </div>
+    </template>
+</header>

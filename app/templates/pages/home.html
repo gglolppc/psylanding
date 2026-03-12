@@ -1,0 +1,1004 @@
+{% extends "base.html" %} {% block content %}
+<section class="relative overflow-hidden bg-[#F6F6F6] cursor-default">
+  <div class="absolute inset-0 pointer-events-none">
+    <div
+      class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#287094]/10 blur-3xl"
+    ></div>
+    <div
+      class="absolute top-[30%] -left-20 h-64 w-64 rounded-full bg-[#D4D4CE]/60 blur-3xl"
+    ></div>
+  </div>
+
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="py-12 sm:py-16 lg:py-24">
+      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div class="max-w-2xl">
+          <div class="mb-6">
+            <span
+              class="text-sm uppercase tracking-[0.2em] text-[#287094]/80 font-medium"
+              >Психолог</span
+            >
+            <h2 class="text-3xl font-semibold text-[#023246] mt-1 sm:text-4xl">
+              Ирина Стратонова
+            </h2>
+          </div>
+
+          <div
+            class="mb-6 inline-flex items-center rounded-full border border-[#287094]/10 bg-white/60 px-5 py-2 text-xs sm:text-sm text-[#287094] shadow-sm backdrop-blur-sm"
+          >
+            <span
+              class="mr-2 flex h-1.5 w-1.5 rounded-full bg-[#287094]"
+            ></span>
+            Бережная работа с травмой и внутренним напряжением
+          </div>
+
+          <h1
+            class="text-4xl font-semibold leading-[1.15] tracking-tight text-[#023246] sm:text-5xl lg:text-6xl"
+          >
+            Пространство, где <br />
+            <span class="text-[#287094]">возвращается опора</span>
+          </h1>
+
+          <p
+            class="mt-6 max-w-xl text-base leading-8 text-[#023246]/70 sm:text-lg"
+          >
+            Индивидуальная помощь для тех, кто ищет выход из эмоционального
+            истощения. Без оценок и давления — только внимание к вашему опыту и
+            границам.
+          </p>
+
+          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
+            <a
+              href="#booking"
+              class="inline-flex items-center justify-center rounded-full bg-[#023246] px-8 py-4 text-sm font-medium text-white shadow-lg shadow-[#023246]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#03405a]"
+            >
+              Записаться на встречу
+            </a>
+            <a
+              href="#about"
+              class="inline-flex items-center justify-center rounded-full border border-[#023246]/10 bg-white/50 px-8 py-4 text-sm font-medium text-[#023246] backdrop-blur-sm transition-all duration-300 hover:bg-white hover:shadow-sm"
+            >
+              О методах работы
+            </a>
+          </div>
+
+          <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div
+              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
+            >
+              <p class="text-sm font-semibold text-[#023246] tracking-wide">
+                Любой формат
+              </p>
+              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
+                Онлайн по всему миру или лично в кабинете
+              </p>
+            </div>
+            <div
+              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
+            >
+              <p class="text-sm font-semibold text-[#023246] tracking-wide">
+                60 минут
+              </p>
+              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
+                Оптимальное время для глубокой терапии
+              </p>
+            </div>
+            <div
+              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
+            >
+              <p class="text-sm font-semibold text-[#023246] tracking-wide">
+                Безопасно
+              </p>
+              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
+                Полная этическая конфиденциальность
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <div class="mx-auto max-w-md lg:max-w-none">
+            <div
+              class="rounded-[2.5rem] border border-white bg-white/40 p-4 shadow-[0_30px_70px_rgba(2,50,70,0.08)] backdrop-blur-md sm:p-6"
+            >
+              <div class="rounded-[2rem] bg-[#D4D4CE]/40 p-4 sm:p-6">
+                <div
+                  class="overflow-hidden rounded-[1.5rem] bg-white shadow-inner"
+                >
+                  <div class="aspect-[4/5] overflow-hidden">
+                    <img
+                      src="/static/img/main.jpg"
+                      alt="Ирина Стратонова"
+                      class="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-6 grid grid-cols-2 gap-3">
+                <div
+                  class="cursor-default rounded-2xl bg-[#287094] py-3 text-center text-xs font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md hover:bg-[#236782]"
+                >
+                  Опора
+                </div>
+                <div
+                  class="cursor-default rounded-2xl bg-[#D4D4CE] py-3 text-center text-xs font-medium text-[#023246] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                >
+                  Границы
+                </div>
+                <div
+                  class="cursor-default rounded-2xl border border-[#023246]/10 bg-white py-3 text-center text-xs font-medium text-[#023246] shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                >
+                  Тревога
+                </div>
+                <div
+                  class="cursor-default rounded-2xl bg-[#023246] py-3 text-center text-xs font-medium text-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                >
+                  Восстановление
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-6 -right-2 hidden rounded-2xl border border-white bg-white/90 px-6 py-4 shadow-xl backdrop-blur-sm sm:block"
+          >
+            <div class="flex items-center gap-3">
+              <div class="flex -space-x-2">
+                <span
+                  class="h-2 w-2 rounded-full bg-[#287094] animate-pulse"
+                ></span>
+              </div>
+              <p class="text-sm font-medium tracking-wide text-[#023246]">
+                Бережный подход
+                <span class="mx-2 opacity-20">|</span> Профессионально
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section id="about" class="relative bg-white py-20 lg:py-28 cursor-default">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+      <div class="max-w-2xl">
+        <p
+          class="text-sm font-medium uppercase tracking-[0.2em] text-[#287094]"
+        >
+          О подходе
+        </p>
+
+        <h2
+          class="mt-4 text-3xl font-semibold tracking-tight text-[#023246] sm:text-4xl"
+        >
+          Путь к внутренней устойчивости
+        </h2>
+
+        <div
+          class="mt-8 space-y-6 text-base leading-8 text-[#023246]/80 sm:text-lg"
+        >
+          <p>
+            В терапии я не просто слушаю — мы вместе находим точки опоры,
+            которые были утеряны. Моя задача как специалиста — создать условия,
+            в которых ваш травматический опыт перестает управлять вашим
+            настоящим.
+          </p>
+
+          <p>
+            Я комбинирую методы, которые работают не только с мыслями, но и с
+            глубокими эмоциональными отпечатками в теле и психике.
+          </p>
+
+          <div class="mt-10 space-y-8">
+            <div class="group relative pl-8">
+              <div
+                class="absolute left-0 top-1.5 h-2 w-2 rounded-full bg-[#287094] transition-all duration-300 group-hover:scale-150"
+              ></div>
+              <p class="font-semibold text-[#023246]">ДПДГ (EMDR) и ImTT</p>
+              <p class="mt-1 text-sm leading-6 text-[#023246]/70">
+                Техники, которые помогают мозгу буквально «переварить»
+                болезненные события прошлого. Это позволяет воспоминаниям стать
+                просто частью истории, перестав вызывать острую боль, тревогу
+                или замирание сегодня.
+              </p>
+            </div>
+
+            <div class="group relative pl-8">
+              <div
+                class="absolute left-0 top-1.5 h-2 w-2 rounded-full bg-[#D4D4CE] transition-all duration-300 group-hover:scale-150"
+              ></div>
+              <p class="font-semibold text-[#023246]">
+                Терапия принятия и ответственности (ACT)
+              </p>
+              <p class="mt-1 text-sm leading-6 text-[#023246]/70">
+                Мы учимся не тратить силы на бесконечную борьбу с тяжелыми
+                мыслями, а перенаправляем этот ресурс на то, чтобы жить
+                полноценно, опираясь на ваши истинные ценности.
+              </p>
+            </div>
+
+            <div class="group relative pl-8">
+              <div
+                class="absolute left-0 top-1.5 h-2 w-2 rounded-full bg-[#287094]/30 transition-all duration-300 group-hover:scale-150"
+              ></div>
+              <p class="font-semibold text-[#023246]">Гипно- и арт-терапия</p>
+              <p class="mt-1 text-sm leading-6 text-[#023246]/70">
+                Бережная работа с подсознанием и образами, которая помогает
+                найти внутренние ресурсы там, где слова бессильны.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="sticky top-24 rounded-[2.5rem] border border-[#023246]/5 bg-[#F6F6F6] p-8 lg:p-12"
+      >
+        <h3 class="text-2xl font-semibold text-[#023246]">
+          С чем можно обратиться
+        </h3>
+        <p class="mt-4 text-sm leading-6 text-[#023246]/60">
+          Если вашего запроса нет в списке, мы можем обсудить его на короткой
+          ознакомительной встрече.
+        </p>
+
+        <div
+          class="mt-10 grid grid-cols-1 gap-y-5 sm:grid-cols-2 lg:grid-cols-1"
+        >
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Травматический опыт и ПТСР</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Тревожные состояния и ОКР</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Панические атаки и страхи</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Кризисы самооценки</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Горе, потери и расставания</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Эмоциональная зависимость</span
+            >
+          </div>
+
+          <div
+            class="flex items-center gap-4 transition-transform duration-300 hover:translate-x-2"
+          >
+            <div
+              class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+            >
+              <span class="h-1.5 w-1.5 rounded-full bg-[#287094]"></span>
+            </div>
+            <span class="text-sm font-medium text-[#023246]/90"
+              >Работа с чувством вины и обиды</span
+            >
+          </div>
+        </div>
+
+        <div
+          class="mt-12 rounded-2xl bg-[#023246] p-6 text-center shadow-lg shadow-[#023246]/10 transition-transform duration-300 hover:scale-[1.02]"
+        >
+          <p
+            class="text-xs font-medium uppercase tracking-widest text-[#D4D4CE]"
+          >
+            Результат терапии
+          </p>
+          <p class="mt-2 text-sm text-white/90">
+            Обретение устойчивости и способности выбирать себя даже в сложные
+            времена.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formats" class="bg-[#F6F6F6] py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="text-sm font-medium uppercase tracking-[0.18em] text-[#287094]">
+        Формат работы
+      </p>
+      <h2
+        class="mt-3 text-3xl font-semibold tracking-tight text-[#023246] sm:text-4xl"
+      >
+        Подходящий ритм и формат под твой запрос
+      </h2>
+    </div>
+
+    <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div
+        class="rounded-[2rem] border border-[#023246]/8 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col justify-between"
+      >
+        <div>
+          <h3 class="text-xl font-medium text-[#023246]">
+            Индивидуальная консультация
+          </h3>
+          <p class="mt-3 text-sm leading-7 text-[#023246]/70">
+            Для конкретного запроса, кризисной ситуации или первого знакомства с
+            терапией.
+          </p>
+        </div>
+        <div class="mt-5">
+          <p class="text-sm font-medium text-[#287094]">
+            Онлайн / офлайн · 50–60 минут
+          </p>
+          <p class="mt-1 text-lg font-semibold text-[#023246]">от XXXX MDL</p>
+        </div>
+      </div>
+
+      <div
+        class="rounded-[2rem] border border-[#023246]/8 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col justify-between"
+      >
+        <div>
+          <h3 class="text-xl font-medium text-[#023246]">
+            Краткосрочная работа
+          </h3>
+          <p class="mt-3 text-sm leading-7 text-[#023246]/70">
+            Когда есть понятная тема и нужен аккуратный, сфокусированный
+            процесс.
+          </p>
+        </div>
+        <div class="mt-5">
+          <p class="text-sm font-medium text-[#287094]">
+            Несколько встреч под одну задачу
+          </p>
+          <p class="mt-1 text-lg font-semibold text-[#023246]">
+            от XXXX MDL / сессия
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="rounded-[2rem] border border-[#023246]/8 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col justify-between"
+      >
+        <div>
+          <h3 class="text-xl font-medium text-[#023246]">
+            Долгосрочная терапия
+          </h3>
+          <p class="mt-3 text-sm leading-7 text-[#023246]/70">
+            Для глубокой работы с травмой, сценариями и внутренними конфликтами.
+          </p>
+        </div>
+        <div class="mt-5">
+          <p class="text-sm font-medium text-[#287094]">
+            Регулярно · с погружением
+          </p>
+          <p class="mt-1 text-lg font-semibold text-[#023246]">
+            от XXXX MDL / сессия
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certificates" class="bg-white py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl">
+      <p class="text-sm font-medium uppercase tracking-[0.18em] text-[#287094]">
+        Образование и сертификаты
+      </p>
+      <h2
+        class="mt-3 text-3xl font-semibold tracking-tight text-[#023246] sm:text-4xl"
+      >
+        Профессиональная подготовка и постоянное развитие
+      </h2>
+    </div>
+
+    <div class="mt-12 relative">
+      <button
+        id="certPrev"
+        class="absolute -left-4 top-1/2 z-20 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition active:scale-95 sm:left-0"
+      >
+        ‹
+      </button>
+      <button
+        id="certNext"
+        class="absolute -right-4 top-1/2 z-20 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg flex items-center justify-center hover:scale-105 transition active:scale-95 sm:right-0"
+      >
+        ›
+      </button>
+
+      <div class="overflow-hidden px-2">
+        <div
+          id="certTrack"
+          class="flex gap-4 sm:gap-6 transition-transform duration-500 ease-out"
+        >
+          {% for img in certificate_images %}
+          <div
+            class="certCard w-[80vw] flex-shrink-0 sm:w-[320px] md:w-[340px]"
+          >
+            <button
+              class="certificate-thumb w-full group"
+              data-index="{{ loop.index0 }}"
+              data-full="{{ img }}"
+            >
+              <div
+                class="rounded-[2rem] border border-[#287094]/15 bg-[#F6F6F6] p-2 shadow-md hover:shadow-xl transition"
+              >
+                <img
+                  src="{{ img }}"
+                  class="aspect-[3/4] w-full object-cover rounded-[1.5rem] group-hover:scale-[1.02] transition pointer-events-none"
+                />
+              </div>
+            </button>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking" class="bg-[#023246] py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:gap-14">
+      <!-- ЛЕВАЯ ЧАСТЬ -->
+      <div>
+        <p
+          class="text-sm font-medium uppercase tracking-[0.18em] text-[#D4D4CE]"
+        >
+          Запись на консультацию
+        </p>
+
+        <h2
+          class="mt-3 text-3xl font-semibold tracking-tight text-white sm:text-4xl"
+        >
+          Первый шаг можно сделать спокойно
+        </h2>
+
+        <p class="mt-5 max-w-md text-base leading-8 text-white/75">
+          Вы можете записаться на
+          <strong>бесплатную 15-минутную встречу-знакомство</strong>. Мы обсудим
+          ваш запрос, и вы поймете, комфортно ли вам работать со мной.
+        </p>
+
+        <!-- КОНТАКТЫ -->
+        <div class="mt-10 space-y-4 text-white">
+          <div class="flex items-center gap-3">
+            <span class="text-white/60">Телефон:</span>
+            <a
+              href="tel:+373XXXXXXXX"
+              class="font-medium hover:text-[#D4D4CE] transition"
+            >
+              +373 XX XXX XXX
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-white/60">Email:</span>
+            <a
+              href="mailto:email@example.com"
+              class="font-medium hover:text-[#D4D4CE] transition"
+            >
+              email@example.com
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-white/60">Telegram:</span>
+            <a
+              href="https://t.me/username"
+              target="_blank"
+              class="font-medium hover:text-[#D4D4CE] transition"
+            >
+              @username
+            </a>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="text-white/60">Instagram:</span>
+            <a
+              href="https://instagram.com/username"
+              target="_blank"
+              class="font-medium hover:text-[#D4D4CE] transition"
+            >
+              @username
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ФОРМА -->
+      <div class="rounded-[2rem] bg-white p-5 shadow-2xl sm:p-8">
+
+
+        <form id="bookingForm" action="/booking" method="post" class="space-y-4">
+  <div class="grid gap-4 sm:grid-cols-2">
+    <input
+      type="text"
+      name="name"
+      placeholder="Имя"
+      required
+      class="h-14 w-full rounded-full border border-[#023246]/10 bg-[#F6F6F6] px-5 text-[#023246] placeholder:text-[#023246]/40 outline-none transition-all duration-300 focus:border-[#287094]/40 focus:bg-white focus:ring-4 focus:ring-[#287094]/10"
+    />
+
+    <input
+      type="text"
+      name="phone"
+      placeholder="Телефон"
+      required
+      class="h-14 w-full rounded-full border border-[#023246]/10 bg-[#F6F6F6] px-5 text-[#023246] placeholder:text-[#023246]/40 outline-none transition-all duration-300 focus:border-[#287094]/40 focus:bg-white focus:ring-4 focus:ring-[#287094]/10"
+    />
+  </div>
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Email"
+    class="h-14 w-full rounded-full border border-[#023246]/10 bg-[#F6F6F6] px-5 text-[#023246] placeholder:text-[#023246]/40 outline-none transition-all duration-300 focus:border-[#287094]/40 focus:bg-white focus:ring-4 focus:ring-[#287094]/10"
+  />
+
+  <input
+    type="text"
+    name="preferred_time"
+    placeholder="Удобное время для связи"
+    class="h-14 w-full rounded-full border border-[#023246]/10 bg-[#F6F6F6] px-5 text-[#023246] placeholder:text-[#023246]/40 outline-none transition-all duration-300 focus:border-[#287094]/40 focus:bg-white focus:ring-4 focus:ring-[#287094]/10"
+  />
+
+  <textarea
+    name="message"
+    rows="5"
+    placeholder="Коротко опишите ваш запрос"
+    class="w-full rounded-[1.5rem] border border-[#023246]/10 bg-[#F6F6F6] px-5 py-4 text-[#023246] placeholder:text-[#023246]/40 outline-none transition-all duration-300 focus:border-[#287094]/40 focus:bg-white focus:ring-4 focus:ring-[#287094]/10"
+  ></textarea>
+
+  <button
+    type="submit"
+    id="submitBtn"
+    class="inline-flex w-full items-center justify-center rounded-full bg-[#287094] px-7 py-4 text-sm font-medium text-white shadow-md shadow-[#287094]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#236782] hover:shadow-lg sm:w-auto"
+  >
+    Отправить заявку
+  </button>
+</form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div
+  id="certModal"
+  class="fixed inset-0 bg-[#023246]/95 z-[100] flex items-center justify-center p-2 opacity-0 pointer-events-none transition-opacity duration-300 backdrop-blur-md"
+>
+  <div id="certBackdrop" class="absolute inset-0"></div>
+
+  <button
+    id="modalPrev"
+    class="absolute left-4 top-1/2 z-[110] -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-[#287094] text-white shadow-lg transition-all duration-300 hover:bg-[#236782] active:scale-95 sm:left-8 sm:w-14 sm:h-14"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M15.75 19.5L8.25 12l7.5-7.5"
+      />
+    </svg>
+  </button>
+
+  <button
+    id="modalNext"
+    class="absolute right-4 top-1/2 z-[110] -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full bg-[#287094] text-white shadow-lg transition-all duration-300 hover:bg-[#236782] active:scale-95 sm:right-8 sm:w-14 sm:h-14"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="2.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M8.25 4.5l7.5 7.5-7.5 7.5"
+      />
+    </svg>
+  </button>
+
+  <div class="relative z-10 max-w-5xl w-full flex justify-center p-4">
+    <button
+      id="modalClose"
+      class="absolute -top-12 right-4 text-white/80 hover:text-white transition-colors duration-300 sm:-top-16 sm:right-0"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-8 h-8 sm:w-10 sm:h-10"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <img
+      id="modalImage"
+      src=""
+      class="max-h-[70vh] md:max-h-[85vh] w-auto object-contain rounded-xl shadow-2xl border-4 border-white/10"
+    />
+  </div>
+</div>
+
+<div id="successModal" class="fixed inset-0 z-[150] flex items-center justify-center p-4 opacity-0 pointer-events-none transition-all duration-500">
+  <div class="absolute inset-0 bg-[#023246]/40 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-sm transform scale-90 transition-all duration-500 bg-white rounded-[2.5rem] p-8 text-center shadow-2xl border border-white">
+    <div class="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#287094]/10">
+      <svg class="h-10 w-10 text-[#287094]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+      </svg>
+    </div>
+    <h3 class="text-2xl font-semibold text-[#023246]">Отправлено!</h3>
+    <p class="mt-4 text-[#023246]/70 leading-relaxed">Спасибо за доверие. <br />Я свяжусь с вами в ближайшее время.</p>
+    <div class="mt-8">
+      <div class="h-1 w-full bg-[#F6F6F6] rounded-full overflow-hidden">
+        <div id="successProgress" class="h-full bg-[#287094] w-full origin-left"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Элементы слайдера
+    const track = document.getElementById("certTrack");
+    const cards = document.querySelectorAll(".certCard");
+    const prevBtn = document.getElementById("certPrev");
+    const nextBtn = document.getElementById("certNext");
+    const viewport = track.parentElement;
+
+    // Элементы модалки сертификатов
+    const modal = document.getElementById("certModal");
+    const modalImg = document.getElementById("modalImage");
+    const thumbs = document.querySelectorAll(".certificate-thumb");
+    const images = [...thumbs].map((t) => t.dataset.full);
+    const modalNextBtn = document.getElementById("modalNext");
+    const modalPrevBtn = document.getElementById("modalPrev");
+    const modalCloseBtn = document.getElementById("modalClose");
+    const modalBackdrop = document.getElementById("certBackdrop");
+
+    let index = 0;
+    let modalIndex = 0;
+
+    // Переменные для свайпа
+    let isDragging = false;
+    let startX = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let moved = false;
+
+    // --- ЛОГИКА СЛАЙДЕРА ---
+
+    function getParams() {
+      if (cards.length === 0) return { step: 0, maxIndex: 0 };
+
+      const cardWidth = cards[0].offsetWidth;
+      const style = window.getComputedStyle(track);
+      const gap = parseInt(style.gap) || 0;
+      const viewportWidth = viewport.offsetWidth;
+
+      let visibleCards;
+
+      if (window.innerWidth < 640) {
+        visibleCards = 1;
+      } else {
+        visibleCards = Math.max(
+          1,
+          Math.floor((viewportWidth + gap) / (cardWidth + gap))
+        );
+      }
+
+      const maxIndex = Math.max(0, cards.length - visibleCards);
+
+      return { step: cardWidth + gap, maxIndex };
+    }
+
+    function updateSlider() {
+      const { step, maxIndex } = getParams();
+
+      if (index > maxIndex) index = maxIndex;
+      if (index < 0) index = 0;
+
+      currentTranslate = -index * step;
+      prevTranslate = currentTranslate;
+
+      track.style.transition = "transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)";
+      track.style.transform = `translateX(${currentTranslate}px)`;
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        const { maxIndex } = getParams();
+        index = index >= maxIndex ? 0 : index + 1;
+        updateSlider();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        const { maxIndex } = getParams();
+        index = index <= 0 ? maxIndex : index - 1;
+        updateSlider();
+      });
+    }
+
+    // --- ЛОГИКА СВАЙПА ---
+
+    const dragStart = (e) => {
+      isDragging = true;
+      moved = false;
+      startX = e.pageX || e.touches[0].pageX;
+      track.style.transition = "none";
+    };
+
+    const dragMove = (e) => {
+      if (!isDragging) return;
+
+      const x = e.pageX || e.touches[0].pageX;
+      const diff = x - startX;
+
+      if (Math.abs(diff) > 5) moved = true;
+
+      track.style.transform = `translateX(${prevTranslate + diff}px)`;
+    };
+
+    const dragEnd = (e) => {
+      if (!isDragging) return;
+
+      isDragging = false;
+
+      const x = e.pageX || (e.changedTouches ? e.changedTouches[0].pageX : startX);
+      const diff = x - startX;
+
+      if (Math.abs(diff) > 50) {
+        const { maxIndex } = getParams();
+
+        if (diff > 0) {
+          index = Math.max(0, index - 1);
+        } else {
+          index = Math.min(maxIndex, index + 1);
+        }
+      }
+
+      updateSlider();
+
+      setTimeout(() => {
+        moved = false;
+      }, 0);
+    };
+
+    if (viewport) {
+      viewport.addEventListener("mousedown", dragStart);
+      viewport.addEventListener("touchstart", dragStart, { passive: true });
+      viewport.addEventListener("touchmove", dragMove, { passive: true });
+      viewport.addEventListener("touchend", dragEnd);
+    }
+
+    window.addEventListener("mousemove", dragMove);
+    window.addEventListener("mouseup", dragEnd);
+
+    // --- ЛОГИКА МОДАЛКИ СЕРТИФИКАТОВ ---
+
+    function openModal(i) {
+      if (!images.length) return;
+
+      modalIndex = i;
+      modalImg.src = images[modalIndex];
+      modal.classList.remove("opacity-0", "pointer-events-none");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal() {
+      modal.classList.add("opacity-0", "pointer-events-none");
+      document.body.style.overflow = "";
+    }
+
+    function nextModal() {
+      if (!images.length) return;
+      modalIndex = (modalIndex + 1) % images.length;
+      modalImg.src = images[modalIndex];
+    }
+
+    function prevModal() {
+      if (!images.length) return;
+      modalIndex = (modalIndex - 1 + images.length) % images.length;
+      modalImg.src = images[modalIndex];
+    }
+
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener("click", () => {
+        if (moved) {
+          moved = false;
+          return;
+        }
+        openModal(i);
+      });
+    });
+
+    if (modalNextBtn) {
+      modalNextBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        nextModal();
+      });
+    }
+
+    if (modalPrevBtn) {
+      modalPrevBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        prevModal();
+      });
+    }
+
+    if (modalCloseBtn) {
+      modalCloseBtn.addEventListener("click", closeModal);
+    }
+
+    if (modalBackdrop) {
+      modalBackdrop.addEventListener("click", closeModal);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (!modal || modal.classList.contains("pointer-events-none")) return;
+
+      if (e.key === "Escape") closeModal();
+      if (e.key === "ArrowRight") nextModal();
+      if (e.key === "ArrowLeft") prevModal();
+    });
+
+    window.addEventListener("resize", updateSlider);
+
+    // --- ЛОГИКА МОДАЛКИ УСПЕХА ---
+
+// --- ЛОГИКА ОТПРАВКИ ФОРМЫ (FETCH) ---
+const bookingForm = document.getElementById("bookingForm");
+const successModal = document.getElementById("successModal");
+const progress = document.getElementById("successProgress");
+const submitBtn = document.getElementById("submitBtn");
+
+if (bookingForm) {
+  bookingForm.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Останавливаем обычную отправку
+
+    // Визуальный фидбек на кнопке
+    const originalText = submitBtn.textContent;
+    submitBtn.disabled = true;
+    submitBtn.textContent = "Отправка...";
+
+    const formData = new FormData(bookingForm);
+
+    try {
+      const response = await fetch(bookingForm.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      if (response.ok) {
+        bookingForm.reset(); // Очищаем поля
+        showSuccess();       // Показываем твою модалку
+      } else {
+        alert("Ошибка. Попробуйте еще раз или напишите в Telegram.");
+      }
+    } catch (error) {
+      console.error("Fetch error:", error);
+      alert("Ошибка сети. Проверьте интернет.");
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = originalText;
+    }
+  });
+}
+
+function showSuccess() {
+  if (!successModal || !progress) return;
+  const modalContent = successModal.querySelector(".relative");
+
+  // Сброс анимации полоски
+  progress.style.transition = "none";
+  progress.style.transform = "scaleX(1)";
+
+  // Показываем
+  successModal.classList.remove("opacity-0", "pointer-events-none");
+  modalContent.classList.remove("scale-90");
+  modalContent.classList.add("scale-100");
+
+  // Запуск полоски
+  setTimeout(() => {
+    progress.style.transition = "transform 3.5s linear";
+    progress.style.transform = "scaleX(0)";
+  }, 50);
+
+  const hideModal = () => {
+    successModal.classList.add("opacity-0", "pointer-events-none");
+    modalContent.classList.remove("scale-100");
+    modalContent.classList.add("scale-90");
+  };
+
+  const autoClose = setTimeout(hideModal, 4000);
+  successModal.onclick = () => {
+    clearTimeout(autoClose);
+    hideModal();
+  };
+}
+
+    // --- ИНИЦИАЛИЗАЦИЯ ---
+    updateSlider();
+  });
+</script>
+{% endblock %}

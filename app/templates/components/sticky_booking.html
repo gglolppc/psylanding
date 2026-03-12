@@ -1,0 +1,84 @@
+<div
+    id="sticky-contact-desktop"
+    class="pointer-events-none fixed bottom-8 right-8 z-50 hidden w-[340px] translate-y-10 opacity-0 transition-all duration-700 md:block"
+>
+    <div id="contact-full" class="pointer-events-auto relative rounded-[2rem] border border-white/80 bg-white/90 p-5 shadow-[0_20px_50px_rgba(2,50,70,0.12)] backdrop-blur-xl transition-all duration-500">
+
+        <button
+            onclick="toggleContact(true)"
+            class="absolute right-4 top-4 text-[#023246]/30 hover:text-[#023246] transition-colors"
+        >
+            <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+        </button>
+
+        <div class="flex items-center gap-4">
+            <div class="relative">
+                <img
+                    src="/static/img/main.jpg"
+                    alt="Ирина Стратонова"
+                    class="h-14 w-14 rounded-full object-cover border-2 border-[#287094]/20"
+                >
+                <span class="absolute bottom-0 right-0 h-3.5 w-3.5 rounded-full border-2 border-white bg-green-500"></span>
+            </div>
+            <div class="min-w-0">
+                <p class="text-sm font-semibold text-[#023246]">Ирина Стратонова</p>
+                <p class="text-[11px] uppercase tracking-wider text-[#287094] font-medium">На связи</p>
+            </div>
+        </div>
+
+        <div class="mt-5 flex items-center gap-2">
+            <a
+                href="#booking"
+                class="flex-1 inline-flex items-center justify-center rounded-full bg-[#023246] px-4 py-3 text-xs font-medium text-white transition-all duration-300 hover:bg-[#03405a] hover:shadow-md active:scale-[0.98]"
+            >
+                Записаться (15 мин)
+            </a>
+
+            <a
+                href="https://t.me/username"
+                target="_blank"
+                class="flex h-10 w-10 items-center justify-center rounded-full border border-[#023246]/10 bg-white text-[#287094] transition-all duration-300 hover:bg-[#287094] hover:text-white"
+                title="Написать в Telegram"
+            >
+                <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.01-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <button
+        id="contact-collapsed"
+        onclick="toggleContact(false)"
+        class="pointer-events-auto absolute bottom-0 right-0 hidden h-16 w-16 items-center justify-center rounded-full border border-white/80 bg-white/90 shadow-xl backdrop-blur-xl transition-all duration-500 hover:scale-110 active:scale-95"
+    >
+        <img src="/static/img/main.jpg" class="h-12 w-12 rounded-full object-cover">
+        <span class="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-[#287094] text-[10px] text-white shadow-sm">1</span>
+    </button>
+</div>
+
+<div
+    id="sticky-contact-mobile"
+    class="pointer-events-none fixed bottom-0 left-0 right-0 z-50 translate-y-full opacity-0 transition-all duration-500 md:hidden"
+>
+    <div class="flex items-center gap-2 border-t border-[#023246]/5 bg-white/90 px-4 py-4 backdrop-blur-xl">
+        <a
+            href="https://t.me/username"
+            target="_blank"
+            class="pointer-events-auto flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#023246]/10 bg-white text-[#287094] shadow-sm active:scale-90 transition-transform"
+        >
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.01-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+            </svg>
+        </a>
+
+        <a
+            href="#booking"
+            class="pointer-events-auto flex h-12 w-full items-center justify-center rounded-full bg-[#023246] px-5 py-3 text-sm font-medium text-white shadow-md active:scale-[0.98] transition-all"
+        >
+            Записаться на 15 мин
+        </a>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+<section class="panel-card">
+    <form method="post" action="{{ form_action }}" enctype="multipart/form-data" class="post-form">
+        <div class="form-grid">
+            <div class="field full">
+                <label>Заголовок</label>
+                <input type="text" name="title" value="{{ post.title if post else '' }}" required>
+            </div>
+
+            <div class="field">
+                <label>Slug</label>
+                <input type="text" name="slug" value="{{ post.slug if post else '' }}" placeholder="оставь пустым для автогенерации">
+            </div>
+
+            <div class="field">
+                <label>Статус</label>
+                <select name="status" required>
+                    <option value="draft" {% if post and post.status == 'draft' %}selected{% endif %}>draft</option>
+                    <option value="published" {% if post and post.status == 'published' %}selected{% endif %}>published</option>
+                </select>
+            </div>
+
+            <div class="field full">
+                <label>Обложка</label>
+                <input type="file" name="cover" accept="image/*" id="coverInput">
+
+                {% if post and post.cover_img %}
+                    <div class="current-cover">
+                        <img src="{{ post.cover_img }}" alt="cover" id="coverPreview">
+                    </div>
+                {% else %}
+                    <div class="current-cover hidden" id="previewWrap">
+                        <img src="" alt="preview" id="coverPreview">
+                    </div>
+                {% endif %}
+            </div>
+
+            <div class="field full">
+                <label>Текст поста</label>
+
+                <div class="editor-toolbar">
+                    <button type="button" data-cmd="bold"><b>B</b></button>
+                    <button type="button" data-cmd="italic"><i>I</i></button>
+                    <button type="button" data-cmd="underline"><u>U</u></button>
+                    <button type="button" data-cmd="insertUnorderedList">• List</button>
+                    <button type="button" data-cmd="formatBlock" data-value="h2">H2</button>
+                    <button type="button" data-cmd="formatBlock" data-value="h3">H3</button>
+                    <button type="button" data-cmd="formatBlock" data-value="p">P</button>
+
+                    <select id="fontSizeSelect" type="button">
+                        <option value="3">Размер обычный</option>
+                        <option value="2">Меньше</option>
+                        <option value="4">Крупнее</option>
+                        <option value="5">Большой</option>
+                    </select>
+                </div>
+
+                <div id="editor" class="editor-surface" contenteditable="true">{{ post.content|safe if post else '' }}</div>
+                <textarea name="content" id="contentInput" hidden></textarea>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <a href="/admin/posts" class="btn-secondary">Назад</a>
+            <button type="submit" class="btn-primary">{{ submit_label }}</button>
+        </div>
+    </form>
+</section>
+{% endblock %}

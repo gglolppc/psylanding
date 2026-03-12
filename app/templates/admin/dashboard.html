@@ -1,0 +1,64 @@
+{% extends 'admin/base.html' %}
+
+{% block content %}
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="stat-label">Все записи</div>
+        <div class="stat-value">{{ bookings_count }}</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Все посты</div>
+        <div class="stat-value">{{ posts_count }}</div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-label">Опубликовано</div>
+        <div class="stat-value">{{ published_count }}</div>
+    </div>
+</div>
+
+<div class="admin-grid-2">
+    <section class="panel-card">
+        <div class="panel-head">
+            <h2>Последние записи</h2>
+            <a href="/admin/bookings">Все</a>
+        </div>
+
+        <div class="simple-list">
+            {% for item in latest_bookings %}
+                <div class="simple-row">
+                    <div>
+                        <strong>{{ item.name }}</strong>
+                        <div>{{ item.phone }}</div>
+                    </div>
+                    <div class="muted">{{ item.created_at.strftime('%d.%m.%Y %H:%M') }}</div>
+                </div>
+            {% else %}
+                <p class="muted">Записей пока нет.</p>
+            {% endfor %}
+        </div>
+    </section>
+
+        <section class="panel-card">
+        <div class="panel-head">
+            <h2>Последние посты</h2>
+            <a href="/admin/posts">Все</a>
+        </div>
+
+        <div class="simple-list">
+            {% for item in latest_posts %}
+                <div class="simple-row">
+                    <div>
+                        <strong>{{ item.title }}</strong>
+                        <div class="muted">/{{ item.slug }}</div>
+                    </div>
+                    <div>
+                        <span class="badge {{ item.status }}">{{ item.status }}</span>
+                    </div>
+                </div>
+            {% else %}
+                <p class="muted">Постов пока нет.</p>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+{% endblock %}

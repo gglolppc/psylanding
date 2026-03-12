@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ирина Стратонова — психолог в Кишинёве | Консультации психолога</title>
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 10px 30px rgba(2, 50, 70, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#F6F6F6] text-[#023246] antialiased">
+    {% include "components/header.html" %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include "components/footer.html" %}
+    {% include "components/sticky_booking.html" %}
+
+
+    <script>
+function toggleContact(isMinimize) {
+    const full = document.getElementById('contact-full');
+    const collapsed = document.getElementById('contact-collapsed');
+
+    if (isMinimize) {
+        full.classList.add('hidden');
+        collapsed.classList.remove('hidden');
+        collapsed.classList.add('flex');
+    } else {
+        full.classList.remove('hidden');
+        collapsed.classList.add('hidden');
+        collapsed.classList.remove('flex');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const desktopContact = document.getElementById('sticky-contact-desktop');
+    const mobileContact = document.getElementById('sticky-contact-mobile');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+            desktopContact.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            mobileContact.classList.remove('opacity-0', 'translate-y-full', 'pointer-events-none');
+        } else {
+            desktopContact.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            mobileContact.classList.add('opacity-0', 'translate-y-full', 'pointer-events-none');
+        }
+    });
+});
+</script>
+<script>
+function toggleContact(isMinimize) {
+    const full = document.getElementById('contact-full');
+    const collapsed = document.getElementById('contact-collapsed');
+
+    if (isMinimize) {
+        full.classList.add('hidden');
+        collapsed.classList.remove('hidden');
+        collapsed.classList.add('flex');
+    } else {
+        full.classList.remove('hidden');
+        collapsed.classList.add('hidden');
+        collapsed.classList.remove('flex');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const desktopContact = document.getElementById('sticky-contact-desktop');
+    const mobileContact = document.getElementById('sticky-contact-mobile');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+            desktopContact.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+            mobileContact.classList.remove('opacity-0', 'translate-y-full', 'pointer-events-none');
+        } else {
+            desktopContact.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+            mobileContact.classList.add('opacity-0', 'translate-y-full', 'pointer-events-none');
+        }
+    });
+});
+</script>
+</body>
+</html>

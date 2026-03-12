@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+build/
+dist/
+
+# Databases (твой app.db)
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# IDE - PyCharm / VSCode
+.idea/
+.vscode/
+*.swp
+
+# uv / Project specific
+.python-version
+# uv.lock обычно коммитят, но если проект только для себя — можно скрыть.
+# Но лучше оставить (не добавлять в ignore)
