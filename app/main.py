@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
-from app.core.database import Base, engine
 from app.api.routes.booking import router as booking_router
 from app.api.routes.blog import router as blog_router
 from app.api.routes.admin_posts import router as admin_posts_router
@@ -15,7 +14,7 @@ from app.web.routes.admin_auth import router as admin_login
 
 app = FastAPI(title="Psychologist Site")
 
-Base.metadata.create_all(bind=engine)
+
 
 app.mount("/static", StaticFiles(directory="app/static"), name="static")
 
