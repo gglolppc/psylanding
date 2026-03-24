@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block content %}
-<section class="relative overflow-hidden bg-[#F6F6F6] cursor-default">
+<section id="spec" class="relative overflow-hidden bg-[#F6F6F6] cursor-default">
   <div class="absolute inset-0 pointer-events-none">
     <div
       class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-[#287094]/10 blur-3xl"
@@ -10,86 +10,90 @@
   </div>
 
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <section class="py-12 sm:py-16 lg:py-24">
-      <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-        <div class="max-w-2xl">
-          <div class="mb-6">
-            <span
-              class="text-sm uppercase tracking-[0.2em] text-[#287094]/80 font-medium"
-              >Клинический психолог | Специалист по работе с травмой и тревожными состояниями</span
-            >
-            <h1 class="text-3xl font-semibold text-[#023246] mt-1 sm:text-4xl">
-              Ирина Стратонова
-            </h1>
-          </div>
+  <section class="py-12 sm:py-16 lg:py-24">
+    <div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+      <div class="max-w-2xl">
 
-
-
-          <h2
-            class="text-4xl font-semibold leading-[1.15] tracking-tight text-[#023246] sm:text-2xl lg:text-3xl"
-          >
-            Мы не можем изменить прошлое, <br />
-            <span class="text-[#287094]"> но мы можем изменить то, как оно влияет на наше сегодня.</span>
-          </h2>
-
-          <p
-            class="mt-6 max-w-xl text-base leading-8 text-[#023246]/70 sm:text-lg"
-          >
-
-            Профессиональная помощь в преодолении тревоги и внутреннего напряжения.
+        <div class="mb-10 lg:mb-12 border-b border-[#023246]/10 pb-6">
+          <h1 class="text-4xl font-extrabold tracking-tight text-[#023246] sm:text-5xl">
+            Ирина Стратонова
+          </h1>
+          <p class="mt-3 text-base uppercase tracking-wider text-[#287094]/80 font-medium">
+            Клинический психолог &nbsp;//&nbsp; Специалист по работе с травмами и тревожными состояниями
           </p>
-
-          <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-            <a
-              href="#booking"
-              class="inline-flex items-center justify-center rounded-full bg-[#023246] px-8 py-4 text-sm font-medium text-white shadow-lg shadow-[#023246]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#03405a]"
-            >
-              Записаться на встречу
-            </a>
-            <a
-              href="#about"
-              class="inline-flex items-center justify-center rounded-full border border-[#023246]/10 bg-white/50 px-8 py-4 text-sm font-medium text-[#023246] backdrop-blur-sm transition-all duration-300 hover:bg-white hover:shadow-sm"
-            >
-              О методах работы
-            </a>
-          </div>
-
-          <div class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <div
-              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
-            >
-              <p class="text-sm font-semibold text-[#023246] tracking-wide">
-                Любой формат
-              </p>
-              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
-                Онлайн по всему миру или лично в кабинете
-              </p>
-            </div>
-            <div
-              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
-            >
-              <p class="text-sm font-semibold text-[#023246] tracking-wide">
-                90 минут
-              </p>
-              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
-                Оптимальное время для глубокой терапии
-              </p>
-            </div>
-            <div
-              class="group rounded-[2rem] border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-md"
-            >
-              <p class="text-sm font-semibold text-[#023246] tracking-wide">
-                Безопасно
-              </p>
-              <p class="mt-1 text-xs leading-5 text-[#023246]/60">
-                Полная этическая конфиденциальность
-              </p>
-            </div>
-          </div>
         </div>
 
+        <h2 class="relative text-3xl font-medium leading-[1.2] text-[#023246] sm:text-2xl lg:text-3xl">
+          <span class="block opacity-60">
+            Мы не можем изменить прошлое,
+          </span>
+          <span class="relative inline-block mt-3 text-4xl font-black tracking-tighter text-[#287094] italic sm:text-3xl lg:text-4xl">
+            <span class="absolute -bottom-1 left-0 h-1.5 w-1/2 bg-[#d4d442] opacity-80 rounded-full"></span>
+            но мы меняем его влияние на наше сегодня.
+          </span>
+        </h2>
+
+        <p class="mt-8 max-w-xl text-lg leading-relaxed text-[#023246]/80 font-normal">
+          Профессиональная помощь в преодолении тревоги и внутреннего напряжения.
+        </p>
+
+        <div class="mt-12 flex flex-col gap-4 sm:flex-row sm:items-center">
+          <a
+            href="#booking"
+            class="group inline-flex items-center justify-center rounded-full bg-[#023246] px-10 py-4.5 text-sm font-semibold text-white shadow-lg shadow-[#023246]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#03405a]"
+          >
+            <span>Записаться на встречу</span>
+            <svg class="ml-2.5 h-4 w-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </a>
+          <a
+            href="#about"
+            class="inline-flex items-center justify-center rounded-full border-2 border-[#023246]/10 bg-white/50 px-10 py-4.5 text-sm font-medium text-[#023246] backdrop-blur-sm transition-all duration-300 hover:bg-white hover:border-[#023246]/30 hover:shadow-sm"
+          >
+            О методах работы
+          </a>
+        </div>
+
+        <div class="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div class="relative group overflow-hidden rounded-2xl border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-lg">
+            <div class="absolute -inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-[#287094]/5 via-transparent to-transparent"></div>
+
+            <p class="relative z-10 text-sm font-bold text-[#023246] tracking-tight uppercase">
+              Любой формат
+            </p>
+            <p class="relative z-10 mt-1 text-xs leading-5 text-[#023246]/70">
+              Онлайн по всему миру или лично в кабинете
+            </p>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-2xl border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-lg">
+            <div class="absolute -inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-[#287094]/5 via-transparent to-transparent"></div>
+
+            <p class="relative z-10 text-sm font-bold text-[#023246] tracking-tight uppercase">
+              90 минут
+            </p>
+            <p class="relative z-10 mt-1 text-xs leading-5 text-[#023246]/70">
+              Оптимальное время для глубокой терапии
+            </p>
+          </div>
+
+          <div class="relative group overflow-hidden rounded-2xl border border-white bg-white/40 p-5 shadow-sm transition-all duration-300 hover:bg-white hover:shadow-lg">
+            <div class="absolute -inset-0 opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-r from-[#287094]/5 via-transparent to-transparent"></div>
+
+            <p class="relative z-10 text-sm font-bold text-[#023246] tracking-tight uppercase">
+              Безопасно
+            </p>
+            <p class="relative z-10 mt-1 text-xs leading-5 text-[#023246]/70">
+              Полная этическая конфиденциальность
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+
+
         <div class="relative">
-          <div class="mx-auto max-w-md lg:max-w-none">
+          <div class="mx-auto max-w-md ">
             <div
               class="rounded-[2.5rem] border border-white bg-white/40 p-4 shadow-[0_30px_70px_rgba(2,50,70,0.08)] backdrop-blur-md sm:p-6"
             >
@@ -132,22 +136,7 @@
             </div>
           </div>
 
-          <div
-            class="absolute -bottom-6 -right-2 hidden rounded-2xl border border-white bg-white/90 px-6 py-4 shadow-xl backdrop-blur-sm sm:block"
-          >
-            <div class="flex items-center gap-3">
-              <div class="flex -space-x-2">
-                <span
-                  class="h-2 w-2 rounded-full bg-[#287094] animate-pulse"
-                ></span>
-              </div>
-              <p class="text-sm font-medium tracking-wide text-[#023246]">
-                Бережный подход
-                <span class="mx-2 opacity-20">|</span> Профессионально
-              </p>
-            </div>
-          </div>
-        </div>
+
       </div>
     </section>
   </div>
